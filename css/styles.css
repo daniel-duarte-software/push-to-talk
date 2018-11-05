@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    background: #d0d0d0;
+}
+
+.centered-block {
+    display: block;
+    margin: auto;
+}
+
+.rounded {
+    --size: 14rem;
+    height: var(--size);
+    width: var(--size);
+    border-radius: calc(var(--size) / 2);
+}
+
+.record-button {
+    color: #888;
+    padding: 1rem;
+    font-size: 1.5rem;
+    animation: none;
+    background-color: #fff;
+    border: 0.5rem solid #fff;
+    box-shadow: 0rem 0.25em 1rem;
+}
+
+.record-button--animating {
+    animation: record-button-animation 2s infinite;
+}
+
+@keyframes record-button-animation {
+    0% { background-color: #ed1b2e; }
+    50% { background-color: #7f181b; }
+    100% { background-color: #ed1b2e; }
+}

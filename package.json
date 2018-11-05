@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "formidable": "*"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-es2015-modules-commonjs": "*",
+        "jest": "*"
+    },
+    "scripts": {
+        "start": "node services/index.js",
+        "test": "jest"
+    }
+}
